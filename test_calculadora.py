@@ -1,6 +1,5 @@
 import unittest
 import calculadora
-import pytest
 
 
 class TestCalculator(unittest.TestCase):
