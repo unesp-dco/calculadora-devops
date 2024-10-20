@@ -11,19 +11,25 @@ jobs:
         with:
           python-version: '3.10'
           architecture: 'x64'
+- name: Pytest coverage comment
+  uses: MishaKav/pytest-coverage-comment@main
+  with:
+    pytest-coverage-path: ./pytest-coverage.txt
+    junitxml-path: ./pytest.xml
 #      - name: Versao do Python
 #        run: python -c "import sys; print(sys.version)"
 #      - name: Testando o programa
 #        run: python -m unittest discover
-      - name: Instalando a coverage
-        run: pip install coverage
-      - name: Cobertura dos testes
-        run: | 
-          coverage run -m unittest discover
-          coverage report
-          coverage html
-      - name: Armazenar relatorio de cobertura
-        uses: actions/upload-artifact@v4
-        with:
-          name: code-coverage-report
-          path: htmlcov
+###atual
+#      - name: Instalando a coverage
+#        run: pip install coverage
+#      - name: Cobertura dos testes
+#        run: | 
+#          coverage run -m unittest discover
+#          coverage report
+#          coverage html
+#      - name: Armazenar relatorio de cobertura
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: code-coverage-report
+#          path: htmlcov
