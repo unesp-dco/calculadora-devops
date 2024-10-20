@@ -1,10 +1,7 @@
 import unittest
 import calculadora
 
-
 class TestCalculator(unittest.TestCase):
-#	def setUp(self):
-#        self.calc = Calculator()
 
     def test_soma(self):
         self.assertEqual(calculadora.calcular('10','1','+'), 11)
