@@ -37,6 +37,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculadora.calcular('25','4','/'), 6.25)
         self.assertEqual(calculadora.calcular('0','0.63','/'), 0)
         self.assertEqual(calculadora.calcular('100','10','//'), None)
+        self.assertEqual(calculadora.calcular('100','10','//'), 0)
 
     def test_exponenciacao(self):
         self.assertEqual(calculadora.calcular('10','1','^'), 10)
