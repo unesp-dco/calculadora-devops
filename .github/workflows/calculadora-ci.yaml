@@ -18,7 +18,7 @@ jobs:
       - name: Instalando a coverage
         run: pip install coverage
       - name: Cobertura dos testes
-        run: coverage -m unittest discover
+        run: coverage run -m unittest discover
       - name: Gerando o relatorio de cobertura
         run: coverage html
         
