@@ -15,8 +15,9 @@ jobs:
 #        run: python -c "import sys; print(sys.version)"
 #      - name: Testando o programa
 #        run: python -m unittest discover
-      - name: Cobertura dos testes
+      - name: Instalando a coverage
         run: pip install coverage
+      - name: Cobertura dos testes
         run: coverage -m unittest discover
       - name: Gerando o relatorio de cobertura
         run: coverage html
