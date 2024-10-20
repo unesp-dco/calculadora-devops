@@ -16,6 +16,7 @@ jobs:
 #      - name: Testando o programa
 #        run: python -m unittest discover
       - name: Cobertura dos testes
+        run: pip install coverage
         run: coverage -m unittest discover
       - name: Gerando o relatorio de cobertura
         run: coverage html
