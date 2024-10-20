@@ -13,11 +13,15 @@ jobs:
           architecture: 'x64'
       - name: installing
         run: pip install flake8 pytest pytest-cov
-      - name: Pytest coverage comment
-        uses: MishaKav/pytest-coverage-comment@main
+      - name: pytest-coverage-commentator
+        uses: coroo/pytest-coverage-commentator@v1.0.2
         with:
-          pytest-coverage-path: pytest-coverage.txt
-          junitxml-path: pytest.xml
+          pytest-coverage: pytest-coverage.txt
+#      - name: Pytest coverage comment
+#        uses: MishaKav/pytest-coverage-comment@main
+#        with:
+#          pytest-coverage-path: ./pytest-coverage.txt
+#          junitxml-path: ./pytest.xml
 #      - name: Versao do Python
 #        run: python -c "import sys; print(sys.version)"
 #      - name: Testando o programa
