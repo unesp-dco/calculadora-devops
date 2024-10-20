@@ -11,10 +11,6 @@ jobs:
         with:
           python-version: '3.10'
           architecture: 'x64'
-#      - name: Versao do Python
-#        run: python -c "import sys; print(sys.version)"
-#      - name: Testando o programa
-#        run: python -m unittest discover
       - name: Instalando a coverage
         run: pip install coverage
       - name: Cobertura dos testes
