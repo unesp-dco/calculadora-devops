@@ -2,7 +2,7 @@ import unittest
 import calculadora
 import pytest
 
-'''
+
 class TestCalculator(unittest.TestCase):
 #	def setUp(self):
 #        self.calc = Calculator()
@@ -50,11 +50,4 @@ class TestCalculator(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
-'''
-
-class TestCalculator(unittest.TestCase):
-    def test_one(self):
-        x = "this"
-        assert "h" in x
-        
+    unittest.main()        
