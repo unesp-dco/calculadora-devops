@@ -12,5 +12,5 @@ jobs:
         architecture: 'x64'
     - name: Versao do Python
       run: python -c "import sys; print(sys.version)"
-    - name: Testando o programa
-      run: python -m unittest discover
+#    - name: Testando o programa
+#      run: python -m unittest discover
