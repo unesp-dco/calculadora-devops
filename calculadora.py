@@ -21,16 +21,3 @@ def calcular(valor1,valor2,operacao):
         case '^':
             resultado = valor1 ** valor2
     return resultado
-
-'''
-def main():
-    valor1 = input('Digite o primeiro valor: ')
-    operacao = input('Operacao (+,-,*,/,^): ')
-    valor2 = input('Digite o segundo valor: ')
-    
-    print(valor1,operacao,valor2)
-    resultado = calcular(valor1,valor2,operacao)
-    print('Resultado =',resultado)
-
-main()
-'''
